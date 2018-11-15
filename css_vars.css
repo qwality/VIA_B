@@ -1,0 +1,25 @@
+:root{
+    --debuger: 0px;
+    --sizer: 10;
+    --separator: 0px var(--background-color) solid;
+
+    --background-color: black;
+    --background-img: url("background.jpg");
+
+    --body-color: white;
+    --body-x-margin: calc(var(--sizer) * var(--sizer) * 1px);
+    --body-y-margin: calc(var(--sizer) * 1px + var(--debuger));
+
+    --header-color: white;
+    --header-height: calc(var(--body-x-margin));
+    --header-padding: calc(var(--sizer) * 1px);
+
+    --logo-size: calc(var(--sizer) * 5px);
+    --logo-margin: calc((var(--header-height) - var(--logo-size)) / 2);
+    --logo-gap: calc(var(--logo-size) / 2);
+
+    --footer-color: grey;
+    --footer-height: calc(var(--body-x-margin));
+
+    --img-size: calc((100wv - var(--body-x-margin) * 2 - 3 * 10px) / 4)
+}
