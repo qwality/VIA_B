@@ -77,6 +77,8 @@ body{
 
 .title{
     line-height: var(--unit3);
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
 }
 
 /*.menu-wrapper{*/
@@ -151,7 +153,7 @@ body{
     grid-template-rows: auto;
     grid-template-columns: 50% auto;
     /*width: 100%;*/
-    min-height: calc(var(--sizer) * var(--sizer) * 2px);
+    min-height: var(--unit6);
     background-color: cornflowerblue;
     /*padding: var(--logo-size);*/
     /*overflow: hidden;*/
@@ -192,11 +194,11 @@ h3{
 .articles{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(var(--menu-cols), auto);
     grid-gap: var(--unit1);
 
     font-size: 0.7em;
-    padding: var(--unit3) var(--unit3) 0;
+    padding: var(--unit2) var(--unit2) 0;
 }
 
 .gallery{
