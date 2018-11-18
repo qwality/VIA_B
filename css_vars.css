@@ -1,7 +1,7 @@
 :root{
-    --debuger: 0px;
+    --debuger: 50px;
     --sizer: 10;
-    --separator: 0px var(--background-color) solid;
+    --separator: 0px black solid;
 
     --background-color: black;
     --background-img: url("background.jpg");
@@ -21,5 +21,27 @@
     --footer-color: grey;
     --footer-height: calc(var(--body-x-margin));
 
-    --img-size: calc((100wv - var(--body-x-margin) * 2 - 3 * 10px) / 4)
+    --img-size: calc((100wv - var(--body-x-margin) * 2 - 3 * 10px) / 4);
+
+
+
+
+    --unit0: 4px;
+    --unit1: 10px;
+    --unit2: 22px;
+    --unit3: 48px;
+    --unit4: 76px;
+    --unit5: 96px;
+    --unit6: 244px;
+    --unit7: 512px;
+    --unit8: 648px;
+    --unit9: 1028px;
+
+    --menu-cols: 1;
+
+    --background-color: white;
+    --background-blur: 2px;
+
+    --font1: Montserrat, serif;
+    --font2: Merriweather, serif;
 }
