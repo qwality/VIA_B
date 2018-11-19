@@ -22,6 +22,7 @@
                             <div>Kitten</div>
                             <div>Reading</div>
                             <div>Mouse</div>
+                            <span class="menu-t">menu</span>
                             <!--<span class="meridlo"></span>-->
                         </div>
                         <!--<span class="meridlo"></span>-->
@@ -93,10 +94,11 @@
         </div>
 </body>
 <script>
-    menu = document.getElementsByClassName("menu")[0];
-    cell = parseInt(window.getComputedStyle(menu.children[0]).width);
-    cell += parseInt(window.getComputedStyle(menu).paddingRight);
+
     window.onresize = function () {
+        menu = document.getElementsByClassName("menu")[0];
+        cell = parseInt(window.getComputedStyle(menu.children[0]).width);
+        cell += parseInt(window.getComputedStyle(menu).paddingRight);
         colUpdate(1);
         s = window.getComputedStyle(menu);
         freeSpace = parseInt(s.marginLeft) + menu.clientWidth;
@@ -107,6 +109,7 @@
     function colUpdate(e){
         document.documentElement.style.setProperty("--menu-cols", e)
     }
+    window.onresize();
     // let sranda = document.getElementsByClassName("footer")[0].firstElementChild;
     // sranda.innerHTML = "houba"
 </script>
